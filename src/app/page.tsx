@@ -1,5 +1,12 @@
-import React from "react";
+import React from 'react';
+
+import Header from '@/sections/Header';
 
 export default function Home() {
-  return <main></main>;
+  return (
+    <>
+      <Header />
+      <main></main>
+    </>
+  );
 }

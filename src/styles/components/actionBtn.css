@@ -1,0 +1,31 @@
+.left::before {
+  @apply content-[''] absolute top-0 left-0 w-[42px] h-px bg-white;
+}
+
+.left::after {
+  @apply content-[''] absolute bottom-0 left-0 w-[42px] h-px bg-white;
+}
+
+.right::before {
+  @apply content-[''] absolute top-0 right-0 w-[42px] h-px bg-white;
+}
+
+.right::after {
+  @apply content-[''] absolute bottom-0 right-0 w-[42px] h-px bg-white;
+}
+
+.front::before {
+  @apply content-[''] absolute top-0 left-0 w-px h-[11px] bg-white;
+}
+
+.front::after {
+  @apply content-[''] absolute bottom-0 left-0 w-px h-[11px] bg-white;
+}
+
+.behind::before {
+  @apply content-[''] absolute top-0 right-0 w-px h-[11px] bg-white;
+}
+
+.behind::after {
+  @apply content-[''] absolute bottom-0 right-0 w-px h-[11px] bg-white;
+}

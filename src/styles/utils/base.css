@@ -1,0 +1,23 @@
+.subtitle-bold {
+  @apply font-medium text-lg uppercase;
+}
+
+.subtitle {
+  @apply font-thin text-lg uppercase;
+}
+
+.title-bold {
+  @apply font-medium;
+}
+
+.title {
+  @apply font-thin text-xl tracking-tight uppercase;
+}
+
+.transition {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.menu-btn::after {
+  @apply content-[''] absolute bottom-[9px] left-0 w-0 h-px bg-white hover:w-full focus:w-full transition;
+}

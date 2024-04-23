@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './utils/fonts.css';
+@import './utils/base.css';
+
 *,
 *::before,
 *::after {
@@ -10,33 +13,24 @@
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
+/* img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   color: inherit;
-}
+} */
 
-ul {
+/* ul {
   margin: 0;
   padding: 0;
-}
+} */
 
-li {
+/* li {
   list-style: none;
   text-decoration: none;
   color: inherit;
-}
+} */
