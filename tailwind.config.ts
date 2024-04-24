@@ -15,10 +15,17 @@ const config: Config = {
           'linear-gradient(to bottom, rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url("/images/hero/hero_bg_tab.jpg") 1x, url("/images/hero/hero_bg_tab@2x.jpg") 2x)',
         heroDesk:
           'linear-gradient(to bottom, rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url("/images/hero/hero_bg_desk.jpg") 1x, url("/images/hero/hero_bg_desk@2x.jpg") 2x)',
+
+        aboutMob:
+          'linear-gradient(to bottom, rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url("/images/about/about_bg_mob.jpg") 1x, url("/images/about/about_bg_mob@2x.jpg") 2x)',
+        aboutTab:
+          'linear-gradient(to bottom, rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url("/images/about/about_bg_tab.jpg") 1x, url("/images/about/about_bg_tab@2x.jpg") 2x)',
+        aboutDesk:
+          'linear-gradient(to bottom, rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url("/images/about/about_bg_desk.jpg") 1x, url("/images/about/about_bg_desk@2x.jpg") 2x)',
       },
 
       colors: {
-        bgMainColor: 'hsla(0, 0%, 83%, 0.603)',
+        bgMainColor: '#D9D9D9',
       },
 
       screens: {

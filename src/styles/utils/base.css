@@ -1,3 +1,7 @@
+.wrapper {
+  @apply max-w-mob px-5 py-14 mx-auto;
+}
+
 .subtitle-bold {
   @apply font-medium text-lg uppercase;
 }
@@ -7,11 +11,19 @@
 }
 
 .title-bold {
-  @apply font-medium;
+  @apply font-medium text-xl tracking-tight uppercase;
 }
 
 .title {
   @apply font-thin text-xl tracking-tight uppercase;
+}
+
+.text-accent {
+  @apply font-normal text-base;
+}
+
+.text {
+  @apply font-extralight text-base;
 }
 
 .transition {

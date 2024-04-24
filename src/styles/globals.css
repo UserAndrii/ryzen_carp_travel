@@ -4,33 +4,3 @@
 
 @import './utils/fonts.css';
 @import './utils/base.css';
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
-
-/* a {
-  text-decoration: none;
-  color: inherit;
-} */
-
-/* ul {
-  margin: 0;
-  padding: 0;
-} */
-
-/* li {
-  list-style: none;
-  text-decoration: none;
-  color: inherit;
-} */

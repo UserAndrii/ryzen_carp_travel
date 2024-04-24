@@ -5,7 +5,7 @@ import heroContent from '../../data/hero.json';
 
 const Hero: React.FC = () => {
   return (
-    <div className="container mx-auto px-5 pt-9 pb-14 max-w-mob">
+    <div className="wrapper pt-9">
       <div className="mb-6">
         <p className="subtitle-bold uppercase text-right">
           {heroContent.subtitle.days}
