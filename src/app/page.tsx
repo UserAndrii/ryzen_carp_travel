@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '@/sections/Header';
 import About from '@/sections/About';
+import Services from '@/sections/Services';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <main>
         <About />
+        <Services />
       </main>
     </>
   );
