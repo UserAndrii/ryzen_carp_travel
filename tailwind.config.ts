@@ -22,10 +22,16 @@ const config: Config = {
           'linear-gradient(to bottom, rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url("/images/about/about_bg_tab.jpg") 1x, url("/images/about/about_bg_tab@2x.jpg") 2x)',
         aboutDesk:
           'linear-gradient(to bottom, rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5)), image-set(url("/images/about/about_bg_desk.jpg") 1x, url("/images/about/about_bg_desk@2x.jpg") 2x)',
+
+        servicePoint: "url('/icons/point.svg')",
       },
 
       colors: {
-        bgMainColor: '#D9D9D9',
+        main: '#FFFFFF',
+        support: 'rgba(255, 255, 255, 0.2)',
+        bgMain: '#D9D9D9',
+        btnBg: 'rgba(255, 255, 255, 0.1)',
+        btnBgActive: 'rgba(255, 255, 255, 0.2)',
       },
 
       screens: {
@@ -51,18 +57,25 @@ const config: Config = {
 
         xxs: ['10px', '16px'],
         xs: ['12px', '14.52px'],
-        sm: ['14px', '17px'],
+        sm: ['12px', '24px'],
+        md: ['14px', '17px'],
+
         base: ['14px', '20px'],
+        slide: ['20px', '17px'],
+
         lg: ['37px', '45px'],
         xl: ['40px', '56px'],
+        xxl: ['43px', '52px'],
       },
 
       letterSpacing: {
-        thin: '-0.04em',
-        base: '0.09em',
-        normal: '0.1em',
-        wide: '0.18em',
-        large: '2.28em',
+        tightest: '-0.04em',
+        tighter: '-0.01em',
+        normal: '0.04em',
+        wide: '0.1em',
+        wider: '0.18em',
+        widest: '0.2em',
+        extraWidest: '0.8em',
       },
     },
   },

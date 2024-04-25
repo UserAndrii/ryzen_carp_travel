@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuBtn: React.FC = () => {
   return (
-    <button className="relative menu-btn text-sm tracking-normal link-pointing">
+    <button className="relative menu-btn text-md tracking-wide link-pointing">
       MENU
     </button>
   );

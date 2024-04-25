@@ -11,19 +11,23 @@
 }
 
 .title-bold {
-  @apply font-medium text-xl tracking-tight uppercase;
+  @apply font-medium text-xl tracking-tightest uppercase;
 }
 
 .title {
-  @apply font-thin text-xl tracking-tight uppercase;
+  @apply font-thin text-xl tracking-tightest uppercase;
 }
 
 .text-accent {
-  @apply font-normal text-base;
+  @apply font-normal;
 }
 
 .text {
-  @apply font-extralight text-base;
+  @apply font-extralight;
+}
+
+.label {
+  @apply font-extralight text-sm tracking-widest;
 }
 
 .transition {
@@ -31,5 +35,9 @@
 }
 
 .menu-btn::after {
-  @apply content-[''] absolute bottom-[9px] left-0 w-0 h-px bg-white hover:w-full focus:w-full transition;
+  @apply content-[''] absolute bottom-[9px] left-0 w-0 h-px bg-bgMain hover:w-full focus:w-full transition;
+}
+
+.service-call::before {
+  @apply content-[''] w-3 h-3 mr-2 bg-servicePoint bg-center bg-no-repeat;
 }

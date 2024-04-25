@@ -7,12 +7,12 @@ const Hero: React.FC = () => {
   return (
     <div className="wrapper pt-9">
       <div className="mb-6">
-        <p className="subtitle-bold uppercase text-right">
+        <p className="subtitle-bold tracking-normal uppercase text-right">
           {heroContent.subtitle.days}
           <span className="subtitle">{heroContent.subtitle.main}</span>
         </p>
 
-        <p className="font-light text-xs tracking-[8.7px] mt-[-8px] mr-[-6px] text-right">
+        <p className="font-light text-xs tracking-extraWidest mt-[-8px] mr-[-6px] text-right">
           {heroContent.subtitle.sub}
         </p>
       </div>
