@@ -1,0 +1,44 @@
+{
+  "inputs": [
+    {
+      "id": "name",
+      "name": "name",
+      "type": "text",
+      "autoComplete": "name",
+      "placeholder": "John Smith",
+      "label": "Full name"
+    },
+    {
+      "id": "email",
+      "name": "email",
+      "type": "email",
+      "autoComplete": "email",
+      "placeholder": "johnsmith@email.com",
+      "label": "E-mail"
+    },
+    {
+      "id": "position",
+      "name": "position",
+      "type": "text",
+      "autoComplete": "off",
+      "placeholder": "Movie maker",
+      "label": "Position"
+    },
+    {
+      "id": "phone",
+      "name": "phone",
+      "type": "tel",
+      "autoComplete": "tel",
+      "placeholder": "(097) 12 34 567",
+      "label": "Phone"
+    }
+  ],
+
+  "textarea": {
+    "label": "Message"
+  },
+
+  "consent": {
+    "text": "I confirm my consent to the processing of personal data."
+  }
+}

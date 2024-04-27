@@ -1,0 +1,36 @@
+{
+  "title": {
+    "accent": "US",
+    "content": "Choose"
+  },
+
+  "text": "Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission.",
+
+  "subtitle": "Why us ?",
+
+  "advantages": [
+    {
+      "id": 1,
+      "subheading": "Professional development",
+      "description": "We offer growth opportunities and a creative environment to nurture your talents."
+    },
+    {
+      "id": 2,
+      "subheading": "Teamwork",
+      "description": "Join our close-knit family, where support and inspiration abound."
+    },
+    {
+      "id": 3,
+      "subheading": "Stimulating work environment",
+      "description": "Flexibility and remote options for a comfortable experience."
+    },
+    {
+      "id": 4,
+      "subheading": "Exciting challenges",
+      "description": "Unleash your potential through unforgettable projects showcasing Carpathian beauty."
+    }
+  ],
+
+  "appeal1": "Don't miss your opportunity!",
+  "appeal2": "Fill out the form right now and join our team!"
+}

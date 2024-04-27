@@ -1,4 +1,3 @@
-import '../../styles/components/actionBtn.css';
 import React from 'react';
 
 const ActionBtn: React.FC = () => {

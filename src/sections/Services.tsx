@@ -7,10 +7,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade } from 'swiper/modules';
 
-import getServiceImage from '@/helpers/getServiceImage';
-import servicesContent from '../data/services.json';
-
+import { getServiceImage } from '@/helpers';
 import { ServiceCard, SubTitleList } from '@/components/Services';
+
+import servicesContent from '../data/services.json';
 
 const Services: React.FC = () => {
   const swiperRef = useRef<any>(null);
@@ -44,7 +44,7 @@ const Services: React.FC = () => {
       {servicesContent.slide.map(card => (
         <SwiperSlide key={card.id}>
           <section
-            className="bg-cover bg-center bg-no-repeat h-[851px]"
+            className="bg-bgSecond bg-cover bg-center bg-no-repeat h-[851px]"
             style={{
               backgroundImage: getServiceImage(currentWidht, card.id),
             }}

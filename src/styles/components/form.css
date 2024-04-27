@@ -1,0 +1,35 @@
+.label {
+  @apply font-extralight text-sm tracking-widest;
+}
+
+.input {
+  @apply block px-2 py-[2px] w-full bg-white bg-opacity-5 font-extralight text-sm leading-6 outline-none focus:outline-none hover:bg-opacity-10 focus:bg-opacity-10 placeholder:text-sm placeholder:opacity-[0.2] transition;
+}
+
+.input-phone {
+  @apply pl-10;
+}
+
+.error::before {
+  @apply content-[''] w-5 h-5 mr-1 bg-center bg-no-repeat bg-inputError;
+}
+
+.consent::before {
+  @apply content-[''] absolute top-0 left-0 w-[22px] h-[22px] border border-white;
+}
+
+.consent::after {
+  @apply content-[''] absolute top-1 left-1 w-[14px] h-[14px] bg-white opacity-10 transition;
+}
+
+.checkbox:checked ~ .consent::after {
+  @apply opacity-100;
+}
+
+.checkbox:focus ~ .consent::after {
+  @apply outline-2;
+}
+
+.checkbox:focus-visible ~ .consent::before {
+  box-shadow: 0 0 0 2px rgb(0, 95, 204);
+}

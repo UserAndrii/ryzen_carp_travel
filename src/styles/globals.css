@@ -4,3 +4,5 @@
 
 @import './utils/fonts.css';
 @import './utils/base.css';
+@import './components/actionBtn.css';
+@import './components/form.css';

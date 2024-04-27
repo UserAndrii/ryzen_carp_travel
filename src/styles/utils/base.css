@@ -26,10 +26,6 @@
   @apply font-extralight;
 }
 
-.label {
-  @apply font-extralight text-sm tracking-widest;
-}
-
 .transition {
   @apply transition-all duration-300 ease-in-out;
 }

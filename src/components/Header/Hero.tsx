@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           <span className="subtitle">{heroContent.subtitle.main}</span>
         </p>
 
-        <p className="font-light text-xs tracking-extraWidest mt-[-8px] mr-[-6px] text-right">
+        <p className="font-light text-xxs tracking-extraWidest mt-[-8px] mr-[-6px] text-right">
           {heroContent.subtitle.sub}
         </p>
       </div>
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
         {heroContent.title.content}
       </h1>
 
-      <p className="font-extralight text-xxs w-[157px] mb-6">
+      <p className="font-extralight text-xxxs w-[157px] mb-6">
         {heroContent.locations.join(' / ')}
       </p>
 

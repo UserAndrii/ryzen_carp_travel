@@ -18,7 +18,7 @@ const SubTitleList: React.FC<SubTitleListProps> = ({
         <li
           key={index}
           className={cn('flex items-center', {
-            'service-call ': activeSlide === index,
+            'service-call': activeSlide === index,
           })}
         >
           <button
