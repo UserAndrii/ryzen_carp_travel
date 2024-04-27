@@ -1,0 +1,44 @@
+{
+  "title": {
+    "content": "OUR",
+    "accent": "GALLERY"
+  },
+  "slides": [
+    {
+      "img": "/images/gallery/slides/nature3.jpg",
+      "alt": "Marmaro ridge"
+    },
+    {
+      "img": "/images/gallery/slides/nature1.jpg",
+      "alt": "Carpathian mountain lake"
+    },
+    {
+      "img": "/images/gallery/slides/nature2.jpg",
+      "alt": "Carpathian mountain forest"
+    },
+    {
+      "img": "/images/gallery/slides/nature4.jpeg",
+      "alt": "Herlakhov shield"
+    },
+    {
+      "img": "/images/gallery/slides/nature5.jpeg",
+      "alt": "Lake Brebeneskul in Montenegro"
+    },
+    {
+      "img": "/images/gallery/slides/nature6.jpeg",
+      "alt": "Bran Castle against the background of the Transylvanian hills"
+    },
+    {
+      "img": "/images/gallery/slides/nature8.jpg",
+      "alt": "Mount Pikuy"
+    },
+    {
+      "img": "/images/gallery/slides/nature9.jpeg",
+      "alt": "Lake Synevyr"
+    },
+    {
+      "img": "/images/gallery/slides/nature10.jpg",
+      "alt": "Pip Ivan Chornohirskyi"
+    }
+  ]
+}

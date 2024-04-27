@@ -33,6 +33,13 @@ const config: Config = {
           'linear-gradient(to bottom, rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url("/images/сareer/сareer_bg_desk.jpg") 1x, url("/images/сareer/сareer_bg_desk@2x.jpg") 2x)',
 
         inputError: "url('/icons/close.svg')",
+
+        galleryMob:
+          'linear-gradient(to bottom, rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url("/images/gallery/bg/gallery_bg_mob.jpg") 1x, url("/images/gallery/bg/gallery_bg_mob@2x.jpg") 2x)',
+        galleryTab:
+          'linear-gradient(to bottom, rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url("/images/gallery/bg/gallery_bg_tab.jpg") 1x, url("/images/gallery/bg/gallery_bg_tab@2x.jpg") 2x)',
+        galleryDesk:
+          'linear-gradient(to bottom, rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url("/images/gallery/bg/gallery_bg_desk.jpg") 1x, url("/images/gallery/bg/gallery_bg_desk@2x.jpg") 2x)',
       },
 
       colors: {
