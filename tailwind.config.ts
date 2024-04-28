@@ -40,6 +40,13 @@ const config: Config = {
           'linear-gradient(to bottom, rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url("/images/gallery/bg/gallery_bg_tab.jpg") 1x, url("/images/gallery/bg/gallery_bg_tab@2x.jpg") 2x)',
         galleryDesk:
           'linear-gradient(to bottom, rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url("/images/gallery/bg/gallery_bg_desk.jpg") 1x, url("/images/gallery/bg/gallery_bg_desk@2x.jpg") 2x)',
+
+        contactMob:
+          'linear-gradient(to bottom, rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url("/images/contact/contact_bg_mob.jpg") 1x, url("/images/contact/contact_bg_mob@2x.jpg") 2x)',
+        contactTab:
+          'linear-gradient(to bottom, rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url("/images/contact/contact_bg_tab.jpg") 1x, url("/images/contact/contact_bg_tab@2x.jpg") 2x)',
+        contactDesk:
+          'linear-gradient(to bottom, rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75)), image-set(url("/images/contact/contact_bg_desk.jpg") 1x, url("/images/contact/contact_bg_desk@2x.jpg") 2x)',
       },
 
       colors: {
@@ -47,6 +54,7 @@ const config: Config = {
         support: 'rgba(255, 255, 255, 0.2)',
         bgMain: '#D9D9D9',
         bgSecond: '#0A1813',
+        bgMenu: 'rgba(1, 10, 5, 0.75)',
         btnBg: 'rgba(255, 255, 255, 0.1)',
         btnBgActive: 'rgba(255, 255, 255, 0.2)',
         error: '#FF5757',
@@ -80,6 +88,7 @@ const config: Config = {
         md: ['14px', '17px'],
 
         base: ['14px', '20px'],
+        menu: ['18px', '22px'],
         slide: ['20px', '17px'],
 
         lg: ['37px', '45px'],

@@ -2,14 +2,16 @@ import React from 'react';
 
 import { TextareaProps } from '@/types';
 
-const Textarea: React.FC<TextareaProps> = ({ label, register }) => {
+import formContent from '../../data/form.json';
+
+const Textarea: React.FC<TextareaProps> = ({ id, register }) => {
   return (
     <div className="flex flex-col gap-1 mb-4">
-      <label htmlFor="message" className="label">
-        {label}
+      <label htmlFor={id} className="label">
+        {formContent.textarea.label}
       </label>
       <textarea
-        id="message"
+        id={id}
         className="input w-full h-[196px] resize-none"
         {...register('message')}
       />

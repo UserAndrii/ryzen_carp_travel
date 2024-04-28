@@ -1,7 +1,7 @@
 import React from 'react';
+import cn from 'classnames';
 
 import { InputProps } from '@/types';
-import cn from 'classnames';
 
 const Input: React.FC<InputProps> = ({ input, register, errors }) => {
   const { label, id, name, type, autoComplete, placeholder } = input;

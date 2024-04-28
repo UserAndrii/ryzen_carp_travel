@@ -2,7 +2,7 @@ export type FormData = {
   name: string;
   email: string;
   position?: string;
-  phone: string;
+  phone?: string;
   message?: string;
-  consent: boolean;
+  consent?: boolean;
 };

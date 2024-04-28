@@ -3,6 +3,6 @@ import { UseFormRegister } from 'react-hook-form';
 import { FormData } from './FormData';
 
 export interface TextareaProps {
-  label: string;
+  id: string;
   register: UseFormRegister<FormData>;
 }

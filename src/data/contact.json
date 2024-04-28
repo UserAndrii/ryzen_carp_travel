@@ -1,0 +1,40 @@
+{
+  "title": {
+    "content": "Contact",
+    "accent": "US"
+  },
+  "phone": {
+    "text": "Phone number",
+    "phone1": "+38 (098) 12 34 567",
+    "phone2": "+38 (073) 12 34 567"
+  },
+  "email": {
+    "text": "E-mail",
+    "address": "support@carptravel.com"
+  },
+  "social": {
+    "text": "Follow us",
+    "networks": [
+      {
+        "id": 1,
+        "name": "facebook",
+        "link": "https://www.facebook.com/groups/800116306766778?locale=uk_UA"
+      },
+      {
+        "id": 2,
+        "name": "instagram",
+        "link": "https://www.instagram.com/carpathians.ua/"
+      },
+      {
+        "id": 3,
+        "name": "youtube",
+        "link": "https://www.youtube.com/watch?v=LcKUV0xQVBI&ab_channel=Ukra%D1%97ner"
+      },
+      {
+        "id": 4,
+        "name": "tiktok",
+        "link": "https://www.tiktok.com/@ukrainedestinations"
+      }
+    ]
+  }
+}

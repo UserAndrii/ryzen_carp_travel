@@ -10,6 +10,7 @@ import { EffectFade } from 'swiper/modules';
 import { getServiceImage } from '@/helpers';
 import { ServiceCard, SubTitleList } from '@/components/Services';
 
+import menuContent from '../data/menu.json';
 import servicesContent from '../data/services.json';
 
 const Services: React.FC = () => {
@@ -44,6 +45,7 @@ const Services: React.FC = () => {
       {servicesContent.slide.map(card => (
         <SwiperSlide key={card.id}>
           <section
+            id={menuContent.list[1]}
             className="bg-bgSecond bg-cover bg-center bg-no-repeat h-[851px]"
             style={{
               backgroundImage: getServiceImage(currentWidht, card.id),

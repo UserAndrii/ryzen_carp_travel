@@ -2,7 +2,9 @@ import React from 'react';
 
 import { ConsentProps } from '@/types';
 
-const Consent: React.FC<ConsentProps> = ({ register, errors, text }) => {
+import formContent from '../../data/form.json';
+
+const Consent: React.FC<ConsentProps> = ({ register, errors }) => {
   return (
     <div className="flex relative">
       <input
@@ -15,7 +17,7 @@ const Consent: React.FC<ConsentProps> = ({ register, errors, text }) => {
         htmlFor="consent"
         className="consent relative font-extralight text-xs/[22px] pl-[30px] mb-6 cursor-pointer"
       >
-        {text}
+        {formContent.consent.text}
       </label>
 
       {errors.consent?.message && (

@@ -1,9 +1,22 @@
+import cn from 'classnames';
 import React from 'react';
 
-const MenuBtn: React.FC = () => {
+export type MenuBtnProps = {
+  title: string;
+  onClick: () => void;
+  className?: string;
+};
+
+const MenuBtn: React.FC<MenuBtnProps> = ({ title, onClick, className }) => {
   return (
-    <button className="relative menu-btn text-md tracking-wide link-pointing">
-      MENU
+    <button
+      className={cn(
+        'relative active-btn text-md tracking-wide link-pointing',
+        className
+      )}
+      onClick={onClick}
+    >
+      {title}
     </button>
   );
 };

@@ -1,10 +1,14 @@
 import React from 'react';
 
 import aboutContent from '../data/about.json';
+import menuContent from '../data/menu.json';
 
 const About: React.FC = () => {
   return (
-    <section className="bg-cover bg-center bg-no-repeat bg-aboutMob md:bg-aboutTab lg:bg-aboutDesk">
+    <section
+      id={menuContent.list[0]}
+      className="bg-cover bg-center bg-no-repeat bg-aboutMob md:bg-aboutTab lg:bg-aboutDesk"
+    >
       <div className="wrapper">
         <h2 className="title-bold mb-2">
           <span className="title">{aboutContent.title.content}</span>{' '}

@@ -1,5 +1,5 @@
 {
-  "inputs": [
+  "inviteInputs": [
     {
       "id": "name",
       "name": "name",
@@ -31,6 +31,25 @@
       "autoComplete": "tel",
       "placeholder": "(097) 12 34 567",
       "label": "Phone"
+    }
+  ],
+
+  "contactInputs": [
+    {
+      "id": "fullName",
+      "name": "name",
+      "type": "text",
+      "autoComplete": "name",
+      "placeholder": "John Smith",
+      "label": "Full name"
+    },
+    {
+      "id": "contactEmail",
+      "name": "email",
+      "type": "email",
+      "autoComplete": "email",
+      "placeholder": "johnsmith@email.com",
+      "label": "E-mail"
     }
   ],
 

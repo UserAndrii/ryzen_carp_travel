@@ -30,7 +30,7 @@
   @apply transition-all duration-300 ease-in-out;
 }
 
-.menu-btn::after {
+.active-btn::after {
   @apply content-[''] absolute bottom-[9px] left-0 w-0 h-px bg-bgMain hover:w-full focus:w-full transition;
 }
 

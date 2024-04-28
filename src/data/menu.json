@@ -1,0 +1,7 @@
+{
+  "button": {
+    "open": "MENU",
+    "close": "CLOSE"
+  },
+  "list": ["About", "Services", "Career", "Gallery", "Contacts"]
+}

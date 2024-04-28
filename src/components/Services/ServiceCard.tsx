@@ -36,7 +36,8 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
         height={213}
         src={image}
         alt={call}
-        className="md:w-[463px] md:h-[370px] lg:w-[607px] lg:h-[429px] mb-3"
+        loading="lazy"
+        className="w-auto h-auto md:w-[463px] md:h-[370px] lg:w-[607px] lg:h-[429px] mb-3"
       />
 
       <p className="label text-right mb-6">{call}</p>
