@@ -1,3 +1,6 @@
+import { strict } from 'assert';
+import { StringSchema } from 'yup';
+
 type Inputs = {
   id: string;
   name: string;
@@ -10,4 +13,6 @@ type Inputs = {
 export type FormGenerationProps = {
   typeForm: string;
   formOptions: Inputs[];
+  textareaStyle?: string;
+  inputWrapperStyle?: string;
 };

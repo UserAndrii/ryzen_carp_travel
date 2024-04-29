@@ -1,9 +1,10 @@
 import React from 'react';
 
-import { Slide } from '@/components/Gallery';
+import { SlideList } from '@/components/Gallery';
 
 import menuContent from '../data/menu.json';
 import galleryContent from '../data/gallery.json';
+import { Title } from '@/components/Other';
 
 const Gallery: React.FC = () => {
   return (
@@ -12,12 +13,13 @@ const Gallery: React.FC = () => {
       className="bg-bgSecond bg-cover bg-center bg-no-repeat bg-galleryMob md:bg-galleryTab lg:bg-galleryDesk"
     >
       <div className="wrapper">
-        <h2 className="title-bold mb-6">
-          <span className="title">{galleryContent.title.content}</span>{' '}
-          {galleryContent.title.accent}
-        </h2>
+        <Title
+          content={galleryContent.title.content}
+          accent={galleryContent.title.accent}
+          className="mb-6 md:mb-[72px] md:text-center"
+        />
 
-        <Slide />
+        <SlideList />
       </div>
     </section>
   );

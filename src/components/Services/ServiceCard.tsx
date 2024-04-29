@@ -19,32 +19,37 @@ const ServiceCard: React.FC<IServiceCardProps> = ({
 }) => {
   return (
     <div className="wrapper flex flex-col h-full">
-      <div className="mb-4">
-        <h2 className="title-bold mb-6">
+      <div className="mb-4 md:flex md:justify-between md:items-center md:mb-9">
+        <h2 className="title-bold mb-6 md:mb-0">
           <span className="title">{servicesContent.title.content}</span>{' '}
           {servicesContent.title.accent}
         </h2>
 
-        <p className="font-thin text-xxl text-right text-support">
+        <p className="font-thin text-xxl text-right text-support md:text-xxl_tab">
           <span className="text-main">{`0${id}/`}</span>
           {servicesContent.amount}
         </p>
       </div>
 
-      <Image
-        width={280}
-        height={213}
-        src={image}
-        alt={call}
-        loading="lazy"
-        className="w-auto h-auto md:w-[463px] md:h-[370px] lg:w-[607px] lg:h-[429px] mb-3"
-      />
+      <div className="flex-auto flex flex-col gap-3 md:flex-row md:gap-4">
+        <Image
+          width={280}
+          height={213}
+          src={image}
+          alt={call}
+          className="object-cover w-auto h-auto md:w-[463px] md:h-[370px] lg:w-[607px] lg:h-[429px]"
+        />
 
-      <p className="label text-right mb-6">{call}</p>
+        <div className="flex flex-col justify-between flex-auto">
+          <div className="mb-5 md:flex md:flex-col-reverse md:mb-0">
+            <p className="label text-right mb-6 md:mb-0 md:text-left">{call}</p>
 
-      {children}
+            {children}
+          </div>
 
-      <p className="text">{description}</p>
+          <p className="block text md:text-[13px]">{description}</p>
+        </div>
+      </div>
     </div>
   );
 };

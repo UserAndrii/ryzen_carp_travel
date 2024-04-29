@@ -1,17 +1,17 @@
 .left::before {
-  @apply content-[''] absolute top-0 left-0 w-[42px] h-px bg-white;
+  @apply content-[''] absolute top-0 left-0 w-[42px] h-px bg-white md:w-[35px] lg:w-[44px];
 }
 
 .left::after {
-  @apply content-[''] absolute bottom-0 left-0 w-[42px] h-px bg-white;
+  @apply content-[''] absolute bottom-0 left-0 w-[42px] h-px bg-white md:w-[35px] lg:w-[44px];
 }
 
 .right::before {
-  @apply content-[''] absolute top-0 right-0 w-[42px] h-px bg-white;
+  @apply content-[''] absolute top-0 right-0 w-[42px] h-px bg-white md:w-[35px] lg:w-[44px];
 }
 
 .right::after {
-  @apply content-[''] absolute bottom-0 right-0 w-[42px] h-px bg-white;
+  @apply content-[''] absolute bottom-0 right-0 w-[42px] h-px bg-white md:w-[35px] lg:w-[44px];
 }
 
 .front::before {

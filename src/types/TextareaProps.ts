@@ -5,4 +5,5 @@ import { FormData } from './FormData';
 export interface TextareaProps {
   id: string;
   register: UseFormRegister<FormData>;
+  textareaStyle?: string;
 }

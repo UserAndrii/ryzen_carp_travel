@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-inter text-base text-main bg-bgMain">
+      <body className="font-inter text-base text-main bg-bgMain overflow-x-hidden">
         {children}
       </body>
     </html>

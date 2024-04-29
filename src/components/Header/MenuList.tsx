@@ -7,12 +7,18 @@ import { Link } from 'react-scroll';
 import menuContent from '../../data/menu.json';
 
 export type ListProps = {
-  onClick: () => void;
+  containerStyle: string;
+  itemStyle: string;
+  onClick?: () => void;
 };
 
-const List: React.FC<ListProps> = ({ onClick }) => {
+const MenuList: React.FC<ListProps> = ({
+  containerStyle,
+  itemStyle,
+  onClick,
+}) => {
   return (
-    <ul className="flex flex-col justify-center items-center gap-12 flex-auto cursor-pointer">
+    <ul className={containerStyle}>
       {menuContent.list.map(item => (
         <Link
           key={item}
@@ -22,7 +28,7 @@ const List: React.FC<ListProps> = ({ onClick }) => {
           offset={0}
           duration={500}
           onClick={onClick}
-          className="relative text-menu tracking-wide py-3 active-btn "
+          className={itemStyle}
         >
           {item}
         </Link>
@@ -31,4 +37,4 @@ const List: React.FC<ListProps> = ({ onClick }) => {
   );
 };
 
-export default List;
+export default MenuList;

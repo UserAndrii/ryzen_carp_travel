@@ -12,10 +12,13 @@ import SubmitBtn from './SubmitBtn';
 
 import { careerSchema, feedbackSchema } from '@/helpers';
 import { FormData, FormGenerationProps, InputForm } from '@/types';
+import cn from 'classnames';
 
 const FormGeneration: React.FC<FormGenerationProps> = ({
   typeForm,
   formOptions,
+  textareaStyle,
+  inputWrapperStyle,
 }) => {
   const {
     register,
@@ -43,23 +46,33 @@ const FormGeneration: React.FC<FormGenerationProps> = ({
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <ul>
-        {formOptions.map(input => (
-          <li key={input.id}>
-            <Input
-              input={input as InputForm}
-              register={register}
-              errors={errors}
-            />
-          </li>
-        ))}
-      </ul>
+      <div className={cn('mb-4 md:flex md:gap-5', inputWrapperStyle)}>
+        <ul className="flex flex-col gap-4">
+          {formOptions.map(input => (
+            <li key={input.id}>
+              <Input
+                input={input as InputForm}
+                register={register}
+                errors={errors}
+              />
+            </li>
+          ))}
+        </ul>
 
-      <Textarea id={typeForm} register={register} />
+        <Textarea
+          id={typeForm}
+          register={register}
+          textareaStyle={textareaStyle}
+        />
+      </div>
 
-      {typeForm === 'invite' && <Consent register={register} errors={errors} />}
+      <div className="md:flex md:jastify-beetwen md:items-start">
+        {typeForm === 'invite' && (
+          <Consent register={register} errors={errors} />
+        )}
 
-      <SubmitBtn />
+        <SubmitBtn />
+      </div>
     </form>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ActionBtn: React.FC = () => {
   return (
-    <button className="relative font-bold w-full h-[53px] bg-btnBg hover:bg-btnBgActive focus:bg-btnBgActive transition overflow-hidden cursor-pointer">
+    <button className="relative font-bold w-full h-[53px] bg-btnBg hover:bg-btnBgActive focus:bg-btnBgActive transition overflow-hidden cursor-pointer md:w-[230px] md:h-[50px]">
       <span className="left"></span>
       <span className="front"></span>
       <span className="right"></span>

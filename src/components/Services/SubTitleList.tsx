@@ -13,7 +13,7 @@ const SubTitleList: React.FC<SubTitleListProps> = ({
   swiperRef,
 }) => {
   return (
-    <ul className="flex flex-col gap-4 mb-auto">
+    <ul className="flex flex-col gap-4 md:mb-[25px]">
       {subtitles?.map((item, index) => (
         <li
           key={index}
@@ -23,7 +23,7 @@ const SubTitleList: React.FC<SubTitleListProps> = ({
         >
           <button
             className={cn(
-              'font-extralight text-slide text-left w-full uppercase',
+              'font-extralight text-slide text-left w-full uppercase md:text-slide_tab',
               {
                 'opacity-50 hover:pl-1 hover:opacity-100 transition-all duration-500 easy-in-out':
                   activeSlide !== index,

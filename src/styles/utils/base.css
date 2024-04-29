@@ -1,29 +1,29 @@
 .wrapper {
-  @apply max-w-mob px-5 py-14 mx-auto;
+  @apply max-w-mob px-5 py-14 mx-auto md:max-w-tab md:px-8 md:py-16;
 }
 
 .subtitle-bold {
-  @apply font-medium text-lg uppercase;
+  @apply font-medium text-lg uppercase md:text-xl_tab tracking-[0.13em];
 }
 
 .subtitle {
-  @apply font-thin text-lg uppercase;
+  @apply font-thin text-lg uppercase md:text-xl_tab tracking-[0.13em];
 }
 
 .title-bold {
-  @apply font-medium text-xl tracking-tightest uppercase;
+  @apply font-medium text-xl tracking-tightest uppercase md:text-xl_tab;
 }
 
 .title {
-  @apply font-thin text-xl tracking-tightest uppercase;
+  @apply font-thin text-xl tracking-tightest uppercase md:text-xl_tab;
 }
 
 .text-accent {
-  @apply font-normal;
+  @apply font-normal md:text-base_tab;
 }
 
 .text {
-  @apply font-extralight;
+  @apply font-extralight md:text-base_tab;
 }
 
 .transition {
@@ -31,7 +31,7 @@
 }
 
 .active-btn::after {
-  @apply content-[''] absolute bottom-[9px] left-0 w-0 h-px bg-bgMain hover:w-full focus:w-full transition;
+  @apply content-[''] absolute bottom-[9px] left-0 w-0 h-px bg-bgMain hover:w-full focus:w-full focus-within:w-full transition;
 }
 
 .service-call::before {

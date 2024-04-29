@@ -46,7 +46,7 @@ const Services: React.FC = () => {
         <SwiperSlide key={card.id}>
           <section
             id={menuContent.list[1]}
-            className="bg-bgSecond bg-cover bg-center bg-no-repeat h-[851px]"
+            className="bg-bgSecond bg-cover bg-center bg-no-repeat h-[851px] md:h-full"
             style={{
               backgroundImage: getServiceImage(currentWidht, card.id),
             }}

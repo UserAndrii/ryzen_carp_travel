@@ -11,7 +11,7 @@ const MenuBtn: React.FC<MenuBtnProps> = ({ title, onClick, className }) => {
   return (
     <button
       className={cn(
-        'relative active-btn text-md tracking-wide link-pointing',
+        'relative active-btn text-md tracking-wide link-pointing md:hidden',
         className
       )}
       onClick={onClick}

@@ -7,7 +7,7 @@ const Input: React.FC<InputProps> = ({ input, register, errors }) => {
   const { label, id, name, type, autoComplete, placeholder } = input;
 
   return (
-    <div className="relative flex flex-col gap-1 mb-4">
+    <div className="relative flex flex-col gap-1">
       <label
         htmlFor={id}
         className={cn('label', { 'text-error': errors[name]?.message })}
@@ -26,7 +26,7 @@ const Input: React.FC<InputProps> = ({ input, register, errors }) => {
         {...register(name)}
       />
       {name === 'phone' && (
-        <span className="absolute bottom-[2px] left-3 font-extralight text-sm">
+        <span className="absolute bottom-0 left-3 font-extralight text-sm">
           + 38
         </span>
       )}
