@@ -2,7 +2,7 @@
 
 <h1 align="center">Carp Travel</h1>
 
-<p align="center">Uncover Carpathian’s Secrets! We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!"</p>
+<p align="center">Uncover Carpathian’s Secrets! We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!</p>
 
 <p align="center"><img align="center" src="/public/images/readme/readme_1.png" alt="hero images" width="800"></p>
 
