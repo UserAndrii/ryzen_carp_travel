@@ -1,14 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
 import cn from 'classnames';
+import Image from 'next/image';
 
-export type SlideProp = {
-  isActive: boolean;
-  img: string;
-  alt: string;
-};
+import { SlideProp } from '@/types';
 
-const Slide: React.FC<SlideProp> = ({ isActive, img, alt }) => {
+export const Slide: React.FC<SlideProp> = ({ isActive, img, alt }) => {
   return (
     <div
       className={cn(
@@ -32,5 +28,3 @@ const Slide: React.FC<SlideProp> = ({ isActive, img, alt }) => {
     </div>
   );
 };
-
-export default Slide;

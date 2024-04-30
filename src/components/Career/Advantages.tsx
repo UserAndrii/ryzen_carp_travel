@@ -1,17 +1,15 @@
 import React from 'react';
 
-import TopSection from './TopSection';
-import AdvantagesList from './AdvantagesList';
+import { TopSection } from './TopSection';
+import { AdvantagesList } from './AdvantagesList';
 
-import careerContent from '../../data/career.json';
+import { careerData } from '@/data';
 
-const Advantages: React.FC = () => {
+export const Advantages: React.FC = () => {
   return (
     <div className="bg-cover bg-center bg-no-repeat bg-careerMob md:bg-none md:flex-auto">
       <TopSection />
-      <AdvantagesList advantages={careerContent.advantages} />
+      <AdvantagesList advantages={careerData.advantages} />
     </div>
   );
 };
-
-export default Advantages;

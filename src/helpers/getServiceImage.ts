@@ -1,4 +1,4 @@
-export function getServiceImage(currentWidht: number, id: string) {
+export function getServiceImage(currentWidht: number, id: number) {
   const baseImageUrl = `/images/services/bg/services_bg_${id}`;
 
   if (currentWidht <= 767) {

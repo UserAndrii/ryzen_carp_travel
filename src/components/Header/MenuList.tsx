@@ -4,22 +4,18 @@ import React from 'react';
 
 import { Link } from 'react-scroll';
 
-import menuContent from '../../data/menu.json';
+import { menuData } from '@/data';
 
-export type ListProps = {
-  containerStyle: string;
-  itemStyle: string;
-  onClick?: () => void;
-};
+import { MenuListProps } from '@/types';
 
-const MenuList: React.FC<ListProps> = ({
+export const MenuList: React.FC<MenuListProps> = ({
   containerStyle,
   itemStyle,
   onClick,
 }) => {
   return (
     <ul className={containerStyle}>
-      {menuContent.list.map(item => (
+      {menuData.list.map(item => (
         <Link
           key={item}
           to={item}
@@ -36,5 +32,3 @@ const MenuList: React.FC<ListProps> = ({
     </ul>
   );
 };
-
-export default MenuList;

@@ -13,17 +13,18 @@ import { ServiceCard, SubTitleList } from '@/components/Services';
 import menuContent from '../data/menu.json';
 import servicesContent from '../data/services.json';
 
-const Services: React.FC = () => {
+export const Services: React.FC = () => {
   const swiperRef = useRef<any>(null);
   const [activeSlide, setActiveSlide] = useState(0);
+  const [backgroundImage, setBackgroundImage] = useState('');
 
-  const [currentWidht, setCurrentWidht] = useState(
+  const [currentWidth, setCurrentWidth] = useState(
     typeof window !== 'undefined' ? window.innerWidth : 0
   );
 
   useEffect(() => {
     const handleResize = () => {
-      setCurrentWidht(window.innerWidth);
+      setCurrentWidth(window.innerWidth);
     };
 
     window.addEventListener('resize', handleResize);
@@ -32,6 +33,10 @@ const Services: React.FC = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    setBackgroundImage(getServiceImage(currentWidth, activeSlide + 1));
+  }, [currentWidth, activeSlide]);
 
   return (
     <Swiper
@@ -47,11 +52,12 @@ const Services: React.FC = () => {
           <section
             id={menuContent.list[1]}
             className="bg-bgSecond bg-cover bg-center bg-no-repeat h-[851px] md:h-full"
-            style={{
-              backgroundImage: getServiceImage(currentWidht, card.id),
-            }}
+            style={{ backgroundImage }}
           >
-            <ServiceCard card={card}>
+            <ServiceCard
+              card={card}
+              activeSlide={currentWidth >= 1280 ? activeSlide : 0}
+            >
               <SubTitleList
                 subtitles={servicesContent.subtitle}
                 activeSlide={activeSlide}
@@ -64,5 +70,3 @@ const Services: React.FC = () => {
     </Swiper>
   );
 };
-
-export default Services;

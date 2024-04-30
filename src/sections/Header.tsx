@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { Logo, MenuBtn, Hero, MenuList } from '@/components/Header';
 import { MobileMenu } from '@/components/MobileMenu';
 
-const Header: React.FC = () => {
+export const Header: React.FC = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -34,5 +34,3 @@ const Header: React.FC = () => {
     </header>
   );
 };
-
-export default Header;

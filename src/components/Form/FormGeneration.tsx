@@ -1,23 +1,26 @@
 'use client';
 
 import React from 'react';
-import { yupResolver } from '@hookform/resolvers/yup';
-import { SubmitHandler, useForm } from 'react-hook-form';
+import cn from 'classnames';
 import useFormPersist from 'react-hook-form-persist';
 
-import Input from './Input';
-import Textarea from './Textarea';
-import Consent from './Consent';
-import SubmitBtn from './SubmitBtn';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { careerSchema, feedbackSchema } from '@/helpers';
-import { FormData, FormGenerationProps, InputForm } from '@/types';
-import cn from 'classnames';
 
-const FormGeneration: React.FC<FormGenerationProps> = ({
+import { Input } from './Input';
+import { Textarea } from './Textarea';
+import { Consent } from './Consent';
+import { SubmitBtn } from './SubmitBtn';
+
+import { FormData, FormGenerationProps, InputForm } from '@/types';
+
+export const FormGeneration: React.FC<FormGenerationProps> = ({
   typeForm,
   formOptions,
   textareaStyle,
+  inputListStyle,
   inputWrapperStyle,
 }) => {
   const {
@@ -47,7 +50,7 @@ const FormGeneration: React.FC<FormGenerationProps> = ({
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className={cn('mb-4 md:flex md:gap-5', inputWrapperStyle)}>
-        <ul className="flex flex-col gap-4">
+        <ul className={cn('flex flex-col gap-4', inputListStyle)}>
           {formOptions.map(input => (
             <li key={input.id}>
               <Input
@@ -76,5 +79,3 @@ const FormGeneration: React.FC<FormGenerationProps> = ({
     </form>
   );
 };
-
-export default FormGeneration;

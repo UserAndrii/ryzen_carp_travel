@@ -7,4 +7,5 @@ export interface InputProps {
   input: InputForm;
   register: UseFormRegister<FormData>;
   errors: FieldErrors<FormData>;
+  inputStyle?: string;
 }

@@ -1,13 +1,13 @@
 import cn from 'classnames';
 import React from 'react';
 
-export type MenuBtnProps = {
-  title: string;
-  onClick: () => void;
-  className?: string;
-};
+import { MenuBtnProps } from '@/types';
 
-const MenuBtn: React.FC<MenuBtnProps> = ({ title, onClick, className }) => {
+export const MenuBtn: React.FC<MenuBtnProps> = ({
+  title,
+  onClick,
+  className,
+}) => {
   return (
     <button
       className={cn(
@@ -20,5 +20,3 @@ const MenuBtn: React.FC<MenuBtnProps> = ({ title, onClick, className }) => {
     </button>
   );
 };
-
-export default MenuBtn;

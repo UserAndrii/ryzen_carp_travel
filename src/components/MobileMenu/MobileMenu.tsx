@@ -3,14 +3,14 @@ import cn from 'classnames';
 
 import { MenuBtn, MenuList } from '../Header';
 
-import menuContent from '../../data/menu.json';
+import { menuData } from '@/data';
 
-export type MenuProps = {
-  isOpenMenu: boolean;
-  onClick: () => void;
-};
+import { MobileMenuProps } from '@/types';
 
-const Menu: React.FC<MenuProps> = ({ isOpenMenu, onClick }) => {
+export const MobileMenu: React.FC<MobileMenuProps> = ({
+  isOpenMenu,
+  onClick,
+}) => {
   return (
     <div
       className={cn(
@@ -21,7 +21,7 @@ const Menu: React.FC<MenuProps> = ({ isOpenMenu, onClick }) => {
     >
       <div className="wrapper pt-[33px] h-screen flex flex-col">
         <MenuBtn
-          title={menuContent.button.close}
+          title={menuData.button.close}
           className="block py-3 ml-auto"
           onClick={onClick}
         />
@@ -35,5 +35,3 @@ const Menu: React.FC<MenuProps> = ({ isOpenMenu, onClick }) => {
     </div>
   );
 };
-
-export default Menu;

@@ -14,5 +14,6 @@ export type FormGenerationProps = {
   typeForm: string;
   formOptions: Inputs[];
   textareaStyle?: string;
+  inputListStyle?: string;
   inputWrapperStyle?: string;
 };

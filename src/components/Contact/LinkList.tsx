@@ -1,18 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
 
-import contactContent from '../../data/contact.json';
+import { contactData } from '@/data';
 
-const LinkList: React.FC = () => {
+export const LinkList: React.FC = () => {
   return (
-    <ul className="w-[81px]">
-      {contactContent.social.networks.map(({ id, name, link }) => (
+    <ul className="w-[81px] lg:text-right">
+      {contactData.social.networks.map(({ id, name, link }) => (
         <li key={id}>
           <Link
             href={link}
             rel="noopener noreferrer"
             target="_blank"
-            className="relative active-btn leading-6 after:bottom-0"
+            className="contact"
           >
             {name}
           </Link>
@@ -21,5 +21,3 @@ const LinkList: React.FC = () => {
     </ul>
   );
 };
-
-export default LinkList;

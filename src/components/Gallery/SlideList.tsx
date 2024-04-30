@@ -5,15 +5,15 @@ import 'swiper/css/navigation';
 
 import React from 'react';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import Slide from './Slide';
-import BtnSlider from './BtnSlider';
+import { Slide } from './Slide';
+import { BtnSlider } from './BtnSlider';
 
-import galleryContent from '../../data/gallery.json';
+import { galleryData } from '@/data';
 
-const SlideList: React.FC = () => {
+export const SlideList: React.FC = () => {
   return (
     <div className="relative">
       <Swiper
@@ -35,9 +35,9 @@ const SlideList: React.FC = () => {
             direction: 'horizontal',
           },
         }}
-        className="gallery h-[609px] md:h-[294px]"
+        className="gallery h-[609px] md:h-[294px] lg:h-[429px]"
       >
-        {galleryContent.slides.map(({ img, alt }, index) => (
+        {galleryData.slides.map(({ img, alt }, index) => (
           <SwiperSlide
             tag="li"
             key={index}
@@ -50,19 +50,17 @@ const SlideList: React.FC = () => {
         ))}
       </Swiper>
 
-      <div className="hidden md:absolute md:flex md:justify-between md:w-full md:h-8 md:bottom-4 md:z-10">
+      <div className="hidden md:absolute md:flex md:justify-between md:w-full md:h-10 md:bottom-4 md:z-10 lg:bottom-0 lg:gap-[651px]">
         <BtnSlider
-          className="prev-btn relative active-btn after:-bottom-1 text-[33px] font-thin uppercase md:h-8 py-2 ml-9 transition"
+          className="prev-btn slide-btn ml-9 lg:ml-[230px]"
           label="back"
         />
 
         <BtnSlider
-          className="next-btn relative active-btn after:-bottom-1 text-[33px] font-thin uppercase md:h-8 py-2 mr-9 transition"
+          className="next-btn slide-btn mr-9 lg:mr-[230px]"
           label="next"
         />
       </div>
     </div>
   );
 };
-
-export default SlideList;

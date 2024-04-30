@@ -1,3 +1,3 @@
-export { default as SlideList } from './SlideList';
-export { default as Slide } from './Slide';
-export { default as BtnSlide } from './BtnSlider';
+export { SlideList } from './SlideList';
+export { Slide } from './Slide';
+export { BtnSlider } from './BtnSlider';

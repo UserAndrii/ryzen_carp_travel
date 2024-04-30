@@ -3,7 +3,12 @@ import cn from 'classnames';
 
 import { InputProps } from '@/types';
 
-const Input: React.FC<InputProps> = ({ input, register, errors }) => {
+export const Input: React.FC<InputProps> = ({
+  input,
+  register,
+  errors,
+  inputStyle,
+}) => {
   const { label, id, name, type, autoComplete, placeholder } = input;
 
   return (
@@ -15,7 +20,7 @@ const Input: React.FC<InputProps> = ({ input, register, errors }) => {
         {label}
       </label>
       <input
-        className={cn('input', {
+        className={cn('input', inputStyle, {
           'input-phone': name === 'phone',
           'text-error': errors[name]?.message,
         })}
@@ -26,7 +31,7 @@ const Input: React.FC<InputProps> = ({ input, register, errors }) => {
         {...register(name)}
       />
       {name === 'phone' && (
-        <span className="absolute bottom-0 left-3 font-extralight text-sm">
+        <span className="absolute bottom-0 left-3 font-extralight text-sm md:text-[13px] lg:text-[20px]/[24px] lg:bottom-[1.5px]">
           + 38
         </span>
       )}
@@ -38,5 +43,3 @@ const Input: React.FC<InputProps> = ({ input, register, errors }) => {
     </div>
   );
 };
-
-export default Input;

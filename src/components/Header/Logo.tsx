@@ -4,9 +4,7 @@ import Image from 'next/image';
 
 import logo from '../../../public/icons/logo.png';
 
-export interface LogoProps {}
-
-const Logo: React.FC<LogoProps> = () => {
+export const Logo: React.FC = () => {
   return (
     <Link
       href="/"
@@ -17,5 +15,3 @@ const Logo: React.FC<LogoProps> = () => {
     </Link>
   );
 };
-
-export default Logo;

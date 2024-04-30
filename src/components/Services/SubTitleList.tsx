@@ -1,19 +1,15 @@
 import React from 'react';
 import cn from 'classnames';
 
-interface SubTitleListProps {
-  subtitles: string[];
-  activeSlide: number;
-  swiperRef: any;
-}
+import { SubTitleListProps } from '@/types';
 
-const SubTitleList: React.FC<SubTitleListProps> = ({
+export const SubTitleList: React.FC<SubTitleListProps> = ({
   subtitles,
   activeSlide,
   swiperRef,
 }) => {
   return (
-    <ul className="flex flex-col gap-4 md:mb-[25px]">
+    <ul className="flex flex-col gap-4 md:mb-[25px] lg:mb-0">
       {subtitles?.map((item, index) => (
         <li
           key={index}
@@ -23,7 +19,7 @@ const SubTitleList: React.FC<SubTitleListProps> = ({
         >
           <button
             className={cn(
-              'font-extralight text-slide text-left w-full uppercase md:text-slide_tab',
+              'font-extralight text-slide text-left w-full uppercase md:text-slide_tab lg:text-slide_desk',
               {
                 'opacity-50 hover:pl-1 hover:opacity-100 transition-all duration-500 easy-in-out':
                   activeSlide !== index,
@@ -38,5 +34,3 @@ const SubTitleList: React.FC<SubTitleListProps> = ({
     </ul>
   );
 };
-
-export default SubTitleList;

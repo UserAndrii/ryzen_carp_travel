@@ -1,2 +1,2 @@
-export { default as SubTitleList } from './SubTitleList';
-export { default as ServiceCard } from './ServiceCard';
+export { SubTitleList } from './SubTitleList';
+export { ServiceCard } from './ServiceCard';

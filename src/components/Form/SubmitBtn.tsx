@@ -1,13 +1,12 @@
 import React from 'react';
 
-export interface SubmitBtnProps {}
-
-const SubmitBtn: React.FC<SubmitBtnProps> = () => {
+export const SubmitBtn: React.FC = () => {
   return (
-    <button type="submit" className="block font-medium text-3xl ml-auto">
+    <button
+      type="submit"
+      className="relative active-btn after:bottom-0 block font-medium text-3xl ml-auto lg:text-[32px]/[39px]"
+    >
       SEND
     </button>
   );
 };
-
-export default SubmitBtn;

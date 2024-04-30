@@ -89,15 +89,18 @@ const config: Config = {
 
         base: ['14px', '20px'],
         base_tab: ['16px', '20px'],
+        base_desk: ['18px', '24px'],
         menu: ['18px', '22px'],
         slide: ['20px', '17px'],
         slide_tab: ['22px', '18px'],
+        slide_desk: ['28px', '24px'],
 
         lg: ['37px', '45px'],
         xl: ['40px', '56px'],
         xl_tab: ['67px', '82px'],
         xxl: ['43px', '52px'],
         xxl_tab: ['67px', '78px'],
+        xxl_desk: ['98px', '118px'],
       },
 
       letterSpacing: {

@@ -1,12 +1,7 @@
 import React from 'react';
 
-export interface BtnSlideProps {
-  label: string;
-  className: string;
-}
+import { BtnSlideProps } from '@/types';
 
-const BtnSlider: React.FC<BtnSlideProps> = ({ label, className }) => {
+export const BtnSlider: React.FC<BtnSlideProps> = ({ label, className }) => {
   return <button className={className}>{label}</button>;
 };
-
-export default BtnSlider;

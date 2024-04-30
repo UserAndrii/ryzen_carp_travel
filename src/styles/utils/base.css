@@ -1,29 +1,37 @@
 .wrapper {
-  @apply max-w-mob px-5 py-14 mx-auto md:max-w-tab md:px-8 md:py-16;
+  @apply max-w-mob px-5 py-14 mx-auto md:max-w-tab md:px-8 md:py-16 lg:max-w-desk lg:px-6 lg:py-[104px];
 }
 
 .subtitle-bold {
-  @apply font-medium text-lg uppercase md:text-xl_tab tracking-[0.13em];
+  @apply font-medium text-lg uppercase md:text-xl_tab tracking-[0.13em] lg:text-xxl_desk lg:tracking-[0em];
 }
 
 .subtitle {
-  @apply font-thin text-lg uppercase md:text-xl_tab tracking-[0.13em];
+  @apply font-thin text-lg uppercase md:text-xl_tab tracking-[0.13em] lg:text-xxl_desk lg:tracking-[0em];
 }
 
 .title-bold {
-  @apply font-medium text-xl tracking-tightest uppercase md:text-xl_tab;
+  @apply font-medium text-xl tracking-tightest uppercase md:text-xl_tab lg:text-xxl_desk;
 }
 
 .title {
-  @apply font-thin text-xl tracking-tightest uppercase md:text-xl_tab;
+  @apply font-thin text-xl tracking-tightest uppercase md:text-xl_tab lg:text-xxl_desk;
 }
 
 .text-accent {
-  @apply font-normal md:text-base_tab;
+  @apply font-normal md:text-base_tab lg:text-base_desk;
 }
 
 .text {
-  @apply font-extralight md:text-base_tab;
+  @apply font-extralight md:text-base_tab lg:text-base_desk;
+}
+
+.slide-btn {
+  @apply relative flex justify-center items-center active-btn after:bottom-0 font-thin text-[33px]/[40px] uppercase md:w-[85px] md:h-10 transition;
+}
+
+.contact {
+  @apply inline relative active-btn after:bottom-0 text-base/[24px] md:text-[16px] lg:text-base_desk;
 }
 
 .transition {
