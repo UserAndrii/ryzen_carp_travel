@@ -21,6 +21,7 @@ export const metadata: Metadata = {
       rel: 'icon',
       type: 'image/svg+xml',
     },
+
     {
       url: '/favicon/favicon.ico',
       media: '(prefers-color-scheme: dark)',
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
       type: 'image/svg+xml',
     },
   ],
+
   openGraph: {
     type: 'website',
     url: `${BASE_URL}`,
