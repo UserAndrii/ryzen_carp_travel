@@ -34,7 +34,11 @@ export const metadata: Metadata = {
     title: metaData.name,
     description: metaData.description,
     siteName: metaData.name,
-    images: [{ url: '/images/og/ogpi.jpg' }],
+    images: [
+      {
+        url: 'https://ryzen-carp-travel.vercel.app/_next/image?url=%2Fimages%2Fservices%2Fslide%2Foffer5.jpg&w=3840&q=75',
+      },
+    ],
   },
 };
 
