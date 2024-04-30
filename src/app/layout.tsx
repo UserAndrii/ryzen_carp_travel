@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       type: 'image/svg+xml',
     },
     {
-      url: '/favicon/light_favicon.ico',
+      url: '/favicon/favicon.ico',
       media: '(prefers-color-scheme: dark)',
       rel: 'icon',
       type: 'image/svg+xml',

@@ -9,8 +9,15 @@ export const Logo: React.FC = () => {
     <Link
       href="/"
       className="flex flex-col text-logo tracking-wider font-karantina cursor-pointer"
+      aria-label="Company Logo"
     >
-      <Image src={logo} alt="Carp Travel logo" aria-label="Carp Travel logo" />
+      <Image
+        width={61}
+        height={22}
+        src={logo}
+        alt="Carp Travel logo"
+        aria-label="Carp Travel logo"
+      />
       CarpTravel
     </Link>
   );
