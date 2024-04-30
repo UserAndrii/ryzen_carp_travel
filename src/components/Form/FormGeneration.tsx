@@ -4,6 +4,7 @@ import React from 'react';
 import cn from 'classnames';
 import useFormPersist from 'react-hook-form-persist';
 
+import { Flip, toast } from 'react-toastify';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
@@ -44,6 +45,9 @@ export const FormGeneration: React.FC<FormGenerationProps> = ({
 
   const onSubmit: SubmitHandler<FormData> = data => {
     console.log(data);
+    toast.success(`Thank you for your request! Expect feedback from us!`, {
+      transition: Flip,
+    });
     reset();
   };
 

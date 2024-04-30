@@ -1,16 +1,19 @@
 import '../styles/globals.css';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 import React from 'react';
 
 import { Metadata } from 'next';
+import { ToastContainer } from 'react-toastify';
+
+import { metaData } from '@/data';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL as string;
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: 'Carp Travel',
-  description:
-    'Uncover Carpathian’s Secrets! We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!',
+  title: metaData.name,
+  description: metaData.description,
   icons: [
     {
       url: '/favicon/dark_favicon.ico',
@@ -28,10 +31,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: `${BASE_URL}`,
-    title: 'Carp Travel',
-    description:
-      'Uncover Carpathian’s Secrets! We offer you unforgettable trips to the most beautiful parts of the Carpathians. Enjoy stunning views, exciting expeditions, and the best service!',
-    siteName: 'Carp Travel',
+    title: metaData.name,
+    description: metaData.description,
+    siteName: metaData.name,
     images: [{ url: '/images/og/og_image.jpg' }],
   },
 };
@@ -46,6 +48,18 @@ export default function RootLayout({
       <html lang="en">
         <body className="font-inter text-base text-main bg-bgMain overflow-x-hidden">
           {children}
+          <ToastContainer
+            position="top-right"
+            autoClose={2500}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+          />
         </body>
       </html>
     </>

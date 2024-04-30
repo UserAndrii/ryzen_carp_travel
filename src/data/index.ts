@@ -6,3 +6,4 @@ export { default as careerData } from './career.json';
 export { default as galleryData } from './gallery.json';
 export { default as contactData } from './contact.json';
 export { default as formData } from './form.json';
+export { default as metaData } from './metadata.json';
