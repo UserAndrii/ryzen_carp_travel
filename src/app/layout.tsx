@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: metaData.name,
     description: metaData.description,
     siteName: metaData.name,
-    images: [{ url: '/images/og/og_image.jpg' }],
+    images: [{ url: '/ogp/logo.jpg' }],
   },
 };
 
