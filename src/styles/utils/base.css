@@ -3,11 +3,11 @@
 }
 
 .subtitle-bold {
-  @apply font-medium text-lg uppercase md:text-xl_tab tracking-[0.13em] lg:text-xxl_desk lg:tracking-[0em];
+  @apply font-medium text-lg uppercase md:text-xl_tab md:tracking-[0.13em] lg:text-xxl_desk lg:tracking-[0em];
 }
 
 .subtitle {
-  @apply font-thin text-lg uppercase md:text-xl_tab tracking-[0.13em] lg:text-xxl_desk lg:tracking-[0em];
+  @apply font-thin text-lg uppercase md:text-xl_tab md:tracking-[0.13em] lg:text-xxl_desk lg:tracking-[0em];
 }
 
 .title-bold {

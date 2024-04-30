@@ -14,7 +14,8 @@ export const Header: React.FC = () => {
     if (!isOpenMenu && window.innerWidth <= 767) {
       document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'hidden auto';
+      document.body.style.overflowX = 'hidden';
+      document.body.style.overflowY = 'auto';
     }
   };
 
