@@ -48,10 +48,10 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
               className={cn(
                 'label text-right mb-6 md:mb-0 md:text-left lg:transition-transform',
                 {
-                  'translate-y-[36px]': activeSlide === 1,
-                  'translate-y-[78px]': activeSlide === 2,
-                  'translate-y-[140px]': activeSlide === 3,
-                  'translate-y-[182px]': activeSlide === 4,
+                  'lg:translate-y-[36px]': activeSlide === 1,
+                  'lg:translate-y-[78px]': activeSlide === 2,
+                  'lg:translate-y-[140px]': activeSlide === 3,
+                  'lg:translate-y-[182px]': activeSlide === 4,
                 }
               )}
             >

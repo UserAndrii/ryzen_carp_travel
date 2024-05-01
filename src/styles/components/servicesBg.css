@@ -1,0 +1,349 @@
+.servisesBg1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/images/services/bg/services_bg_1_mob.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .servisesBg1 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_1_mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servisesBg1 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_1_tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg1 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_1_tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .servisesBg1 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_1_desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg1 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_1_desk@2x.jpg);
+    }
+  }
+}
+
+.servisesBg2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/images/services/bg/services_bg_2_mob.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .servisesBg2 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_2_mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servisesBg2 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_2_tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg2 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_2_tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .servisesBg2 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_2_desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg2 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_2_desk@2x.jpg);
+    }
+  }
+}
+
+.servisesBg3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/images/services/bg/services_bg_3_mob.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .servisesBg3 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_3_mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servisesBg3 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_3_tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg3 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_3_tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .servisesBg3 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_3_desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg3 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_3_desk@2x.jpg);
+    }
+  }
+}
+
+.servisesBg4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/images/services/bg/services_bg_4_mob.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .servisesBg4 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_4_mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servisesBg4 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_4_tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg4 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_4_tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .servisesBg4 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_4_desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg4 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_4_desk@2x.jpg);
+    }
+  }
+}
+
+.servisesBg5 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(2, 15, 8, 0.5),
+      rgba(2, 15, 8, 0.5)
+    ),
+    url(/images/services/bg/services_bg_5_mob.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .servisesBg5 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_5_mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .servisesBg5 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_5_tab.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg5 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_5_tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .servisesBg5 {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(2, 15, 8, 0.5),
+        rgba(2, 15, 8, 0.5)
+      ),
+      url(/images/services/bg/services_bg_5_desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .servisesBg5 {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(2, 15, 8, 0.5),
+          rgba(2, 15, 8, 0.5)
+        ),
+        url(/images/services/bg/services_bg_5_desk@2x.jpg);
+    }
+  }
+}
