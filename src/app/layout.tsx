@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     },
   ],
 
-  // openGraph: {
-  //   type: 'website',
-  //   url: `${BASE_URL}`,
-  //   title: metaData.name,
-  //   description: metaData.description,
-  //   siteName: metaData.name,
-  //   images: [{ url: metaData.ogpImage }],
-  // },
+  openGraph: {
+    type: 'website',
+    url: `${BASE_URL}`,
+    title: metaData.name,
+    description: metaData.description,
+    siteName: metaData.name,
+    images: [{ url: metaData.ogpImage }],
+  },
 };
 
 export default function RootLayout({
