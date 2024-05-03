@@ -7,7 +7,6 @@ import { Link } from 'react-scroll';
 import { menuData } from '@/data';
 
 export const ActionBtn: React.FC = () => {
-  console.log(menuData.list[4]);
   return (
     <Link
       to={menuData.list[4]}

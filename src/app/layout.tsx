@@ -8,8 +8,6 @@ import { ToastContainer } from 'react-toastify';
 
 import { metaData } from '@/data';
 
-import ogImage from '../../public/images/og/og_img.jpg';
-
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL as string;
 
 export const metadata: Metadata = {
@@ -55,7 +53,7 @@ export const metadata: Metadata = {
     title: metaData.name,
     description: metaData.description,
     siteName: metaData.name,
-    images: 'images/og/og_img.jpg',
+    images: '/images/og/og_img.jpg',
   },
 };
 
