@@ -29,6 +29,7 @@ export const Header: React.FC = () => {
           itemStyle="relative text-md tracking-wide py-2 active-btn cursor-pointer"
         />
       </nav>
+
       <Hero />
 
       <MobileMenu onClick={toggleMenu} isOpenMenu={isOpenMenu} />

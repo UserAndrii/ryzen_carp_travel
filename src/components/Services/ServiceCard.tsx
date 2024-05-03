@@ -36,7 +36,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
             src={image}
             alt={call}
             fill
-            sizes="(max-width: 480px) 280px 213px, (max-width: 1279px) 453px 370px, 607px 429px"
+            sizes="(max-width: 480px) 280px, (max-width: 1279px) 453px, 607px"
             className="object-cover"
             priority
           />

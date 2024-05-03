@@ -8,7 +8,7 @@ export const ActionBtn: React.FC = () => {
   return (
     <Link
       to={menuData.list[4]}
-      spy={true}
+      href="#"
       smooth={true}
       offset={0}
       duration={500}

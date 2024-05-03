@@ -24,11 +24,11 @@ export const Services: React.FC = () => {
         setActiveSlide(s.activeIndex);
       }}
       ref={swiperRef}
+      id={menuContent.list[1]}
     >
       {servicesContent.slide.map(card => (
         <SwiperSlide key={card.id}>
           <section
-            id={menuContent.list[1]}
             className={`bg-bgSecond bg-cover bg-center bg-no-repeat h-[851px] md:h-full servisesBg${card.id}`}
           >
             <ServiceCard card={card} activeSlide={activeSlide}>

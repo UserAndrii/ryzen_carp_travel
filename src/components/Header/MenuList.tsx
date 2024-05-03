@@ -16,18 +16,19 @@ export const MenuList: React.FC<MenuListProps> = ({
   return (
     <ul className={containerStyle}>
       {menuData.list.map(item => (
-        <Link
-          key={item}
-          to={item}
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          onClick={onClick}
-          className={itemStyle}
-        >
-          {item}
-        </Link>
+        <li key={item}>
+          <Link
+            to={item}
+            href="#"
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={onClick}
+            className={itemStyle}
+          >
+            {item}
+          </Link>
+        </li>
       ))}
     </ul>
   );
