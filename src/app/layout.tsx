@@ -8,12 +8,31 @@ import { ToastContainer } from 'react-toastify';
 
 import { metaData } from '@/data';
 
+import ogImage from '../../public/images/og/og_img.jpg';
+
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL as string;
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: metaData.name,
   description: metaData.description,
+  referrer: 'origin-when-cross-origin',
+  keywords: [
+    'Carpathian',
+    'Carpathian mountains',
+    'Carpathian landscapes',
+    'ATVs Traveling',
+    'Rock climbing',
+    'Hot air ballooning',
+    'Skydiving',
+    'Rafting',
+  ],
+  authors: [
+    { name: 'SoftRyzen', url: 'https://www.softryzen.com/' },
+    { name: 'Andrii Hadar', url: 'https://www.linkedin.com/in/andrii-hadar/' },
+  ],
+  creator: 'SoftRyzen',
+  publisher: 'Andrii Hadar',
   icons: [
     {
       url: '/favicon/dark_favicon.ico',
@@ -36,7 +55,7 @@ export const metadata: Metadata = {
     title: metaData.name,
     description: metaData.description,
     siteName: metaData.name,
-    images: [{ url: metaData.ogpImage }],
+    images: 'images/og/og_img.jpg',
   },
 };
 
