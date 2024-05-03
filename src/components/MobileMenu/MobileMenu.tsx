@@ -14,8 +14,8 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
   return (
     <div
       className={cn(
-        'absolute top-0 w-screen h-screen transition bg-bgMenu backdrop-blur-xl bg-gradient-to-b from-rgba(1, 10, 5, 0.75) to-rgba(1, 10, 5, 0.75) z-10 md:hidden',
-        { 'opacity-1': isOpenMenu },
+        'absolute top-0 w-screen h-screen transition bg-bgMenu backdrop-blur-xl bg-gradient-to-b from-rgba(1, 10, 5, 0.75) to-rgba(1, 10, 5, 0.75) md:hidden',
+        { 'opacity-1 z-20': isOpenMenu },
         { 'opacity-0': !isOpenMenu }
       )}
     >
@@ -28,7 +28,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
 
         <MenuList
           onClick={onClick}
-          containerStyle="flex flex-col justify-center items-center gap-12 flex-auto cursor-pointer"
+          containerStyle="flex flex-col justify-center items-center gap-12 flex-auto"
           itemStyle="relative text-menu tracking-wide py-3 active-btn"
         />
       </div>

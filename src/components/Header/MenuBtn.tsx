@@ -10,6 +10,7 @@ export const MenuBtn: React.FC<MenuBtnProps> = ({
 }) => {
   return (
     <button
+      type="button"
       className={cn(
         'relative active-btn text-md tracking-wide link-pointing md:hidden',
         className

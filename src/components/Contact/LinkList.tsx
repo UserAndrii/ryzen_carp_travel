@@ -10,7 +10,7 @@ export const LinkList: React.FC = () => {
         <li key={id}>
           <Link
             href={link}
-            rel="noopener noreferrer"
+            rel="nofollow noopener noreferrer"
             target="_blank"
             className="contact"
           >

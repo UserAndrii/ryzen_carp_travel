@@ -21,18 +21,18 @@ export const Header: React.FC = () => {
 
   return (
     <header className="relative bg-cover bg-center bg-no-repeat bg-heroMob md:bg-heroTab lg:bg-heroDesk">
+      <MobileMenu onClick={toggleMenu} isOpenMenu={isOpenMenu} />
+
       <nav className="flex justify-between wrapper pt-9 pb-0 md:pt-6">
         <Logo />
         <MenuBtn title="MENU" onClick={toggleMenu} />
         <MenuList
           containerStyle="hidden md:flex gap-6"
-          itemStyle="relative text-md tracking-wide py-2 active-btn cursor-pointer"
+          itemStyle="relative text-md tracking-wide py-2 active-btn after:bottom-[6px]"
         />
       </nav>
 
       <Hero />
-
-      <MobileMenu onClick={toggleMenu} isOpenMenu={isOpenMenu} />
     </header>
   );
 };

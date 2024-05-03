@@ -3,7 +3,7 @@
 }
 
 .input {
-  @apply block px-2 w-full md:w-[222px] h-6 bg-white bg-opacity-5 font-extralight text-sm leading-6 outline-none focus:outline-none hover:bg-opacity-10 focus:bg-opacity-10 placeholder:font-extralight placeholder:text-sm placeholder:opacity-[0.2] transition md:text-[13px] md:placeholder:text-[13px] lg:w-[290px] lg:h-7 lg:text-[20px]/[24px] lg:placeholder:text-[20px]/[24px];
+  @apply block px-2 w-full md:w-[222px] h-6 bg-white bg-opacity-5 font-extralight text-sm leading-6 hover:bg-opacity-10 focus:bg-opacity-10 placeholder:font-extralight placeholder:text-sm placeholder:opacity-[0.2] transition md:text-[13px] md:placeholder:text-[13px] lg:w-[290px] lg:h-7 lg:text-[20px]/[24px] lg:placeholder:text-[20px]/[24px];
 }
 
 .input-phone {

@@ -7,6 +7,7 @@ export const SubTitleList: React.FC<SubTitleListProps> = ({
   subtitles,
   activeSlide,
   swiperRef,
+  tabIndex,
 }) => {
   return (
     <ul className="flex flex-col gap-4 md:mb-[25px] lg:mb-0">
@@ -18,6 +19,7 @@ export const SubTitleList: React.FC<SubTitleListProps> = ({
           })}
         >
           <button
+            type="button"
             className={cn(
               'font-extralight text-slide text-left w-full uppercase md:text-slide_tab lg:text-slide_desk',
               {
@@ -27,6 +29,7 @@ export const SubTitleList: React.FC<SubTitleListProps> = ({
               }
             )}
             onClick={() => swiperRef.current?.swiper.slideTo(index)}
+            tabIndex={tabIndex}
             dangerouslySetInnerHTML={{ __html: item }}
           ></button>
         </li>

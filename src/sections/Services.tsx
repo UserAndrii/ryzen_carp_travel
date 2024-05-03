@@ -26,7 +26,7 @@ export const Services: React.FC = () => {
       ref={swiperRef}
       id={menuContent.list[1]}
     >
-      {servicesContent.slide.map(card => (
+      {servicesContent.slide.map((card, index) => (
         <SwiperSlide key={card.id}>
           <section
             className={`bg-bgSecond bg-cover bg-center bg-no-repeat h-[851px] md:h-full servisesBg${card.id}`}
@@ -36,6 +36,7 @@ export const Services: React.FC = () => {
                 subtitles={servicesContent.subtitle}
                 activeSlide={activeSlide}
                 swiperRef={swiperRef}
+                tabIndex={activeSlide === index ? 0 : -1}
               />
             </ServiceCard>
           </section>
